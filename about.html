@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — LUMO Creative</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- NAV (same as home) -->
+  <header class="nav">
+   <a href="index.html" class="logo">
+  <img src="assets/ICON-V1.png" alt="LUMO logo">
+</a>
+    <nav>
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="about-hero fade-up">
+    <h1>Lumo is about growth.<br>Your success is everything.</h1>
+  </section>
+
+  <!-- PHILOSOPHY -->
+<section class="about-philosophy">
+  <div class="about-text">
+    <h2 class="fade-up delay-2">About LUMO</h2>
+    <p class="fade-up delay-2">
+      LUMO is a creative studio focused on enhancing company's marketing capabilities
+      through digital forms. <br><br> 
+      LUMO is a new player in town and understands what it's like
+      to start your journey. But that's also where LUMO shines. If you are a new business,
+      have outdated digital media, need strategic help, or you just want to stay on top of the game,
+      LUMO is the perfect approach. 
+    </p>
+  </div>
+
+  <div class="about-image fade-up delay-2">
+    <img src="assets/ICON-V1.png" alt="About LUMO Image">
+  </div>
+  </section>
+<!--  <section class="about-services">
+    <div>
+      <h3>Web Design</h3>
+      <p>Clean, conversion-driven, visually restrained.</p>
+    </div>
+    <div>
+      <h3>Analytics & Strategy</h3>
+      <p>Design decisions backed by data.</p>
+    </div>
+    <div>
+      <h3>SEO / GEO</h3>
+      <p>Built to be found, not chased.</p>
+    </div>
+  </section>-->
+  <!-- SERVICES / APPROACH -->
+
+  <section class="about-location">
+
+  <div class="location-maps">
+    <div class="map-card fade-up delay-1">
+  <iframe
+    src="https://www.google.com/maps?q=Kansas+City,MO&output=embed"
+    loading="lazy"
+  ></iframe>
+</div>
+<div class="map-card fade-up delay-1">
+  <iframe
+    src="https://www.google.com/maps?q=Northwest+Arkansas&output=embed"
+    loading="lazy"
+  ></iframe>
+</div>
+
+    
+  </div>
+
+  <div class="location-text fade-up">
+    <h2>Based in Kansas City & Northwest Arkansas</h2>
+    <p>
+        LUMO operates primarily digitally and partners anywhere in the US. 
+        However, we are based locally around the Kansas City and NWA areas. LUMO has extensive knowledge
+        of these areas and capabilities of in person meetings here. 
+    </p>
+    <p>
+      Both Kansas City and NWA are fast growing markets providing the birthgrounds for many 
+      new businesses and opportunities to come. Marketing will become crucial in these markets for spreading the word!
+    </p>
+  </div>
+
+</section>
+
+
+   
+  <!-- FOUNDER -->
+  <section class="about-founder">
+    <img src="assets/ICON-V1.png" alt="The founder's headshot">
+    <div>
+      <h3 class="fade-up">FOUNDER - Kyle Owen</h3>
+      <p class="fade-up">
+        Kyle is a passionate marketing specialist from Kansas. Graduating from 
+        The University of Kansas in 2025, Kyle immediately wants to make a difference. 
+        With a strong background in creative disciplines, while also having a knack for 
+        numbers and data, Kyle's dream is to work as a digital marketer. </br></br>
+        His strive for impact combined with his unique design perspective is what makes 
+        his campains meaningful. 
+        Kyle's love for arts and music plays a huge part in developing brands and campains or even just finding something new to 
+        showcase about clients. 
+        Kyle's dreams are sky high, reach out to talk with him!
+
+
+      </p>
+    </div>
+  </section>
+<!-- Location section needed-->
+
+
+
+  <!-- CTA -->
+  <section class="about-cta">
+    <h2>Got any questions? </br>Feel free to reach out about anything and everything.</h2>
+    <a href="contact.html" class="cta-button">Start a project</a>
+  </section>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll(".fade-up, blur-reveal").forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+
+   <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-contact">
+        <p>Contact</p>
+        <p>Email</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+  <div class="footer-meta">
+  <div class="footer-location">Based in Kansas City & Northwest Arkansas</div>
+  <div class="footer-copy">© 2026 LUMO Marketing Studio</div>
+</div>
+    </div>
+  </footer>
+
+</body>
+</html>

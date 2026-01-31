@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMO — Work</title>
+
+  <!-- Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-p9Qb4TH0vVukx5cYzJcN2wqY6MdZKkHxk8cGj4gZb6H+XoU/NUD/m1uCzO0ku7Zl5N6G6URf3ZvQhK3jF9I3jA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/work.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+     <div class="logo">
+   <a href="index.html" class="logo">
+  <img src="assets/ICON-V1.png" alt="LUMO logo">
+  </div>
+    <div class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- INTRO SECTION -->
+  <section class="services-intro fade-up">
+    <h1 class="fade-up">Work </h1>
+    <p class="fade-up">
+     
+    </p>
+  </section>
+
+<section class="work-page">
+
+  <div class="work-card fade-up">
+
+    <div class="work-image">
+      <img src="assets/AFTS Frontpage.jpg" alt="Autism From the Start Website Front Page">
+    </div>
+
+    <div class="work-content">
+
+      <div class="work-text fade-up">
+        <h2 class="fade-up">Client Project Name</h2>
+        <p class="fade-up">
+          A brief description of the project, the challenge, and the outcome.
+          Focus on clarity, craft, and impact. This is the very long description from the AFTS paragraph.
+          Let’s see how long it can go and what it looks like when it’s super long.
+        </p>
+      </div>
+
+      <div class="work-side-images">
+        <img src="assets/AFTS/30 KB LOGO png.png" alt="Autism from the start Logo">
+        <img src="assets/AFTS/AFTS. A Block only.jpeg" alt="Autism From the Start logo">
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="work-card fade-up">
+    <div class="work-image fade-up">
+      <img src="assets/AFTS/work in progress.jpg" class="fade-up" alt="Work in progress screensaver">
+    </div>
+
+    <div class="work-content">
+      <h2 class="fade-up">Virtue Production</h2>
+      <p class="fade-up">
+        Virtue Prodcution is a sound production company based in Nashville.
+        We're currently working on the website. Stay tuned for updates!!!
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- CTA SECTION -->
+<section class="work-cta">
+  <h2>Want to join the fun?</h2>
+  <p>Reach out and let's talk about marketing possibilities.</p>
+  <a href="contact.html" class="cta-button">Contact Us</a>
+</section>
+
+
+ <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-contact">
+        <p>Contact</p>
+        <p>Email</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+  <div class="footer-meta">
+  <div class="footer-location">Based in Kansas City & Northwest Arkansas</div>
+  <div class="footer-copy">© 2026 LUMO Marketing Studio</div>
+</div>
+    </div>
+  </footer>
+
+
+    <!-- your page content -->
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll(".fade-up").forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
+
+</body>
+</html>

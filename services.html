@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMO — Services</title>
+
+  <!-- Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-p9Qb4TH0vVukx5cYzJcN2wqY6MdZKkHxk8cGj4gZb6H+XoU/NUD/m1uCzO0ku7Zl5N6G6URf3ZvQhK3jF9I3jA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/services.css">
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="nav">
+     <div class="logo">
+   <a href="index.html" class="logo">
+  <img src="assets/ICON-V1.png" alt="LUMO logo">
+  </div>
+    <div class="nav-links">
+      <a href="services.html">Services</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+<!-- SERVICES BACKGROUND WRAPPER -->
+<section class="services-bg">
+
+  <!-- INTRO SECTION -->
+  <section class="services-intro">
+    <h1 class="blur-reveal">Our Services</h1>
+    <p class="blur-reveal delay-2">
+      LUMO is a creative studio focused on building bold brands, meaningful digital
+      experiences, and visual stories that connect. We partner with businesses that
+      value clarity, craft, and impact.
+    </p>
+  </section>   
+
+  <!-- RECTANGLES SECTION -->
+  <section class="services-rectangles">
+
+    <div class="service-card">
+      <img src="" class="base-img" alt="Website Design">
+      <img src="assets/Web-Dev-Icons.png" class="hover-img" alt="Website Design Service Icons">
+      <div class="service-text blur-reveal delay-2" >Web Design</div>
+    </div>
+
+    <div class="service-card">
+      <img src="" class="base-img" alt="Search enginge optimization">
+      <img src="assets/SEO-GEO-background.png" class="hover-img" alt="SEO Service Icons">
+      <div class="service-text blur-reveal">SEO/GEO</div>
+    </div>
+
+    <div class="service-card">
+      <img src="" class="base-img" alt="Data Analysis">
+      <img src="assets/Data-analysis-background2.png" class="hover-img" alt="Data Analysis Service Icons">
+      <div class="service-text blur-reveal">Analytics & Strategy</div>
+    </div>
+
+  </section>
+
+  <!-- make the background pictures from teh hovering transperant and just have the icons on the background.-->
+
+</section>
+ <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-contact">
+        <p>Contact</p>
+        <p>Email</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+  <div class="footer-meta">
+  <div class="footer-location">Based in Kansas City & Northwest Arkansas</div>
+  <div class="footer-copy">© 2026 LUMO Marketing Studio</div>
+</div>
+    </div>
+  </footer>
+  <script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("in-view");
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll(".fade-up, .blur-reveal").forEach(el => {
+  observer.observe(el);
+});
+  </script>
+</body>
+</html>
